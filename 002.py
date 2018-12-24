@@ -1,19 +1,19 @@
-# from selenium import webdriver
-# import time
-# driver = webdriver.Chrome()
-# def openbaidu():
-#     driver.get("http://www.baidu.com")
-#     driver.find_element_by_id('kw').send_keys('helloword')
-#     driver.save_screenshot('./baidu.png')
-# def openbeing():
-#     driver.get('https://cn.bing.com')
-#     driver.find_element_by_id("sb_form_q").send_keys('helloword')
-#     driver.save_screenshot("./bing.png")
+from selenium import webdriver
+import time
+driver = webdriver.Chrome()
+def openbaidu():
+    driver.get("http://www.baidu.com")
+    driver.find_element_by_id('kw').send_keys('helloword')
+    driver.save_screenshot('./baidu.png')
+def openbeing():
+    driver.get('https://cn.bing.com')
+    driver.find_element_by_id("sb_form_q").send_keys('helloword')
+    driver.save_screenshot("./bing.png")
 
-# openbaidu()
-# openbeing()
-# time.sleep(3)
-# driver.quit()
+openbaidu()
+openbeing()
+time.sleep(3)
+ driver.quit()
 
 
 
